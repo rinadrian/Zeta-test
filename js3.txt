@@ -1,0 +1,56 @@
+
+// Expected Result : 
+// [
+//   { id: '1', name: 'Sherlock', score: 90 },
+//   { id: '4', name: 'Budi', score: 85 }
+// ]
+// Direction :
+// Return array of student for score is bigger than mean score (average score)
+
+const students = [
+    {
+      id: "1",
+      name: "Sherlock",
+      score:90
+    },
+    {
+      id: "2",
+      name: "Genta",
+      score: 75
+    },
+    {
+      id: "3",
+      name: "Ai",
+      score: 80
+    },
+    {
+      id: "4",
+      name: "Budi",
+      score:85
+    }
+  ]
+  
+  function result() {
+    var arr = [
+    ["Sherlock,"90"],
+    ["Genta","75"],
+    ["Ai","80"],
+    ["Budi","85"],
+  
+];
+
+var scores = {};
+
+for (var i = 0; i < arr.length; i++) {
+    var student = arr[i];
+
+    if (!scores.hasOwnProperty(student[0]))
+        scores[student[0]] = []
+
+    scores[student[0]].push(student[1])
+}
+  }
+  
+  console.log(result());
+zul_med_filter_median_score.js
+Menampilkan zul_med_filter_median_score.js.
